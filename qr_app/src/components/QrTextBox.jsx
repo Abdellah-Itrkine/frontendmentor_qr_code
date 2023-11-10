@@ -13,7 +13,7 @@ export const ImgMediaCard = () => {
         component="img"
         alt="green qr app"
         height="140"
-        image="../../images/image-qr-code.png"
+        image="/images/image-qr-code.png"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
