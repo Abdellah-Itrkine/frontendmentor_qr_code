@@ -1,14 +1,16 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+import {QrCard} from '../components/QrCard'
+
 export default function Home() {
-  const styles = {
+  const stylesx = {
     color:'hsl(212, 45%, 89%)',
   };
   return (
     
-    <body style={styles}> 
-
-    </body>
+    <div className={styles.main} style={stylesx}> 
+      <QrCard />
+    </div>
   )
 }
