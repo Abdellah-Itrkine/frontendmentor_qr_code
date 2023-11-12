@@ -8,13 +8,16 @@ import Typography from '@mui/material/Typography';
 
 export const ImgMediaCard = () => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green qr app"
-        height="140"
-        image="/images/image-qr-code.png"
-      />
+    <Card sx={{ maxWidth: 345, borderRadius: 5 }}>
+      <div style={{ padding: 10 }}>
+        <CardMedia
+          component="img"
+          alt="green qr app"
+          height="140"
+          image="/images/image-qr-code.png"
+          style={{ width: '100%', height: '100%', borderRadius: 20 }}
+        />
+      </div>
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           Lizard
@@ -30,4 +33,4 @@ export const ImgMediaCard = () => {
       </CardActions>
     </Card>
   );
-}
+};

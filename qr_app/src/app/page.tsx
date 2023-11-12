@@ -5,7 +5,7 @@ import {QrCard} from '../components/QrCard'
 
 export default function Home() {
   const stylesx = {
-    color:'hsl(212, 45%, 89%)',
+    background:'hsl(212, 45%, 89%)',
   };
   return (
     
