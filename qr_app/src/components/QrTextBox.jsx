@@ -1,14 +1,13 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+
 
 export const ImgMediaCard = () => {
   return (
-    <Card sx={{ maxWidth: 345, borderRadius: 5 }}>
+    <Card sx={{ maxWidth: 350, borderRadius: 5 }}>
       <div style={{ padding: 10 }}>
         <CardMedia
           component="img"
@@ -19,18 +18,14 @@ export const ImgMediaCard = () => {
         />
       </div>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
+        <Typography gutterBottom variant="h5" component="div" style={{ fontFamily: 'Outfit' , fontWeight: 700, textAlign: 'center', color: 'hsl(218, 44%, 22%)'}}>
+          Improve your front-end skills by building projects
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+        <Typography variant="body2" color="text.secondary" style={{ fontSize: 18, fontFamily: 'Outfit', fontWeight: 400, textAlign: 'center'}}>
+        Scan the QR code to visit Frontend Mentor and take your coding skills <br/>
+        to the next level
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
   );
 };
